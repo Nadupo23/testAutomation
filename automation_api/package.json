@@ -1,0 +1,12 @@
+{
+  "name": "cypress-api-tests",
+  "version": "1.0.0",
+  "description": "Cypress project to run API tests",
+  "scripts": {
+    "test": "cypress run",
+    "open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^12.0.0"
+  }
+}
