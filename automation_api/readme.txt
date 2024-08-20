@@ -1,11 +1,18 @@
-Pasos para ejecutar las pruebas API realizadas con Cypress:
+README - Ejecución de pruebas API automatizadas con Cypress
 
-1. Tener instalado Node.js en el equipo que ejecutara la prueba, puede obtener mas informacion de como instalarlo
-aqui: https://nodejs.org/en/download/package-manager
+REQUISITOS PREVIOS
 
-2. Ubicar el directorio de trabajo: testAutomation/automation_api
+1. Tener instalado Node.js en el equipo donde se ejecutara la prueba.
+Para obtener más información sobre como instalarlo, acceder al sitio oficial de Node.js.
+Sitio oficial: https://nodejs.org/en/download/package-manager
 
-3. Instalar todas las librerias necesarias previamente definidas en el package.json usando el siguiente comando:
-npm i
+PASOS PARA EJECUTAR LA PRUEBA
 
-4. Ejecutar las pruebas api con el siguiente comando: npm run test
+1. Ubicar el directorio de trabajo
+Ve al directorio que contiene el proyecto de pruebas API: cd testAutomation/automation_api
+
+2. Instalar dependencias
+Instala todas las librerias necesarias previamente definidas en el package.json usando el siguiente comando: npm i
+
+3. Ejecutar las pruebas API
+Finalmente, ejecuta las pruebas api con el siguiente comando: npm run test

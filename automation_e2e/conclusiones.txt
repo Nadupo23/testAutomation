@@ -1,0 +1,41 @@
+HALLAZGOS
+
+Para el desarrollo de la actividad del ejercicio de la opción 1 de AUTOMATIZACIÓN E2E, con cada uno de los siguientes casos:
+1. Agregar dos productos al carrito
+2. Visualizar el carrito
+3. Completar el formularop de compra
+4. Finalizar la compra
+Se consideraron los siguiente hallazgos que permitieron el exito de las pruebas.
+
+1. Seleccionar y agregar productos al carrito
+* Se realizó un test automatizado que simula la selección de dos productos diferentes desde la página principal de
+demoblaze y su posterior adición al carrito de compras.
+* La automatización completó la selección y adición de ambos productos al carrito con éxito, indicando
+que la funcionalidad de agregar productos al carrito está funcionando correctamente.
+
+2. Navegación en la página
+* El script automatizado navega entre la página de inicio, la página de productos, y el carrito, utilizando
+la funcionalidad de volver a la página principal después de agregar cada producto.
+* La navegación se realiza sin errores, y la página responde correctamente a las interacciones del usuario automatizadas.
+
+3. Proceso de compra
+* El script automatiza el proceso de pago, incluyendo el llenado del formulario de pago con
+información de usuario y la confirmación de la compra.
+* El proceso de pago se completó con éxito, y el formulario fue llenado y enviado correctamente.
+Además, el script gestionó la confirmación de la alerta de éxito posterior a la compra.
+
+
+CONCLUSIONES
+
+Se puede concluir con el desarrollo de cada una de estas pruebas, lo siguiente:
+
+1. El flujo completo de compra, desde la selección de productos hasta la confirmación del pago, se ejecuta de manera eficiente
+y sin interrupciones. Esto sugiere que la plataforma está bien diseñada para manejar las interacciones de usuario típicas
+de una tienda en línea.
+
+2. La prueba demostró que el sistema es capaz de manejar interacciones de un usuario en una sola sesión sin fallos.
+Esto es crucial para la experiencia del usuario, ya que garantiza que los usuarios puedan navegar, seleccionar y
+comprar productos de manera efectiva.
+
+3. Implementar un patron de diseño como lo fue POM (Page Object Model) en la automatización, permitio crear un código
+legible y reutilizable haciendo más fácil la separación de lógica y flujos de prueba.

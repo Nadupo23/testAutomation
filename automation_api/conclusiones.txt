@@ -1,0 +1,48 @@
+HALLAZGOS
+
+Para el desarrollo de la actividad del ejercicio de la opción 1 de APIS, con cada uno de los siguientes casos:
+1. Crear un nuevo usuario en signup
+2. Intentar crear un usuario ya existente
+3. Usuario y password correcto en login
+4. Usuario y password incorrecto en login
+Se consideraron los siguiente hallazgos que permitieron el exito de las pruebas.
+
+1. Para el caso de "Crear un nuevo usuario en signup"
+* Se ejecutó una prueba automatizada que realiza una solicitud POST al endpoint /signup de la API
+https://api.demoblaze.com/ para crear un nuevo usuario. El nombre de usuario es generado dinámicamente para asegurar que sea único.
+* La solicitud retornó un código de estado 200, lo que indica que el usuario fue creado exitosamente.
+
+2. Para el caso de "Intentar crear un usuario ya existente"
+* Se ejecutó una segunda prueba que intenta registrar un usuario ya existente (nadupo).
+La prueba realiza otra solicitud POST al mismo endpoint /signup con el mismo nombre de usuario.
+* La solicitud también retornó un código de estado 200, pero con un mensaje de error en el
+cuerpo de la respuesta que indica "This user already exist.".
+
+3. Para el caso de "Usuario y password correcto en login"
+* Se ejecutó una tercera prueba que inicia sesión con un usuario y contraseña correcto.
+La prueba realiza una solicitud POST al endpoint /login con el usuario y contraseña registrados, respondiendo
+un código de estado 200 y un Auth_token.
+
+4. Para el caso de "Usuario y password incorrecto en login"
+* Se ejecutó una cuarta prueba que intenta iniciar sesión con un usuario incorrecto.
+La prueba realiza una solicitud POST al endpoint /login con el usuario no registrado, con un mensaje de error en el cuerpo
+de la respuesta que indica "User does not exist."
+
+* Se ejecutó una quinta prueba que intenta iniciar sesión con una contraseña incorrecta.
+La prueba realiza una solicitud POST al endpoint /login con la contraseña incorrecta, con un mensaje de error en el cuerpo
+de la respuesta que indica "Wrong password."
+
+
+CONCLUSIONES
+
+Se puede concluir con el desarrollo de cada una de estas pruebas, lo siguiente:
+
+1. Se evidencia que la API proporcionada esta correctamente implementada en términos de la creación de usuarios, permitiendo
+registrar usuarios con nombres únicos y rechazando intentos de registro con nombres ya existentes.
+
+2. La prueba que verifica el intento de registro de un usuario existente, usuario y contraseña incorrecto demuestra que
+la API proporciona mensajes de error claros y específicos, lo que es positivo para la depuración y el manejo de errores
+en aplicaciones que consumen este servicio.
+
+3. La automatización de estas pruebas en Cypress permite una validación rápida y repetible de los servicios API, lo que
+es esencial para mantener la calidad y confiabilidad del sistema
